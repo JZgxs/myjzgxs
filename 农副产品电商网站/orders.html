@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单历史 - 农产品电商网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">农产品商城</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="cart.html">购物车 <span id="cart-count">0</span></a>
+                <a href="orders.html" class="active">订单历史</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="orders-container">
+            <h1>订单历史</h1>
+            <div class="express-search">
+                <input type="text" id="express-search" placeholder="输入订单号查询快递">
+                <button onclick="searchExpress()">查询快递</button>
+            </div>
+            <div id="express-result" class="express-result"></div>
+            <div id="orders-list">
+                <!-- 订单将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 农产品电商网站. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
